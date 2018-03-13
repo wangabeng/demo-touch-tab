@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>S.W.O.P</title>
+    <link href="./css/iSlider.css" rel="stylesheet">
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        .fork {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+        }
+
+        #S {
+            z-index: 1;
+            font-size: 5em;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="fork" id="s"></div>
+
+<script type="text/javascript" src="./js/iSlider.js"></script>
+<script type="text/javascript" src="./js/iSlider.animate.js"></script>
+<script id="show-code">
+
+    var list = [
+        {content: "./imgs/1.jpg"},
+        {content: "./imgs/2.jpg"},
+        {content: "./imgs/3.jpg"},
+        {content: "./imgs/4.jpg"},
+        {content: "./imgs/5.jpg"},
+        {content: "./imgs/6.jpg"},
+        {content: "./imgs/7.jpg"},
+        {content: "./imgs/8.jpg"}
+    ];
+
+    var S = new iSlider(document.getElementById('s'), list, {
+        isLooping: 1,
+        isOverspread: 1,
+        isAutoplay: 1,
+        animateTime: 800,
+        animateType: 'depth'
+    });
+
+
+</script>
+</body>
+</html>
