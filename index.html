@@ -16,9 +16,15 @@
             overflow: hidden;
             background-color: #333333;
         }
+        .wrapper {
+            position: relative;
+            height: 900px;
+        }
 
         .fork {
-            position: absolute;
+            position: absolute; /* 必须要绝对定位 */
+            width: 100%;
+            height: 50%;
             left: 0;
             top: 0;
             bottom: 0;
@@ -26,16 +32,19 @@
             overflow: hidden;
         }
 
-        #S {
+/*        #S {
             z-index: 1;
             font-size: 5em;
             color: #ffffff;
-        }
+        }*/
 
     </style>
 </head>
 <body>
-<div class="fork" id="s"></div>
+<div class="wrapper">
+    <div class="fork" id="s"></div>
+</div>
+
 
 <script type="text/javascript" src="./js/iSlider.js"></script>
 <script type="text/javascript" src="./js/iSlider.animate.js"></script>
