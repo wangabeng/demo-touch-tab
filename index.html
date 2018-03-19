@@ -2,74 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
-    <title>S.W.O.P</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>首页</title>
+    <link href="./css/awesome.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
     <link href="./css/iSlider.css" rel="stylesheet">
-    <style>
-        body, html {
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            overflow: hidden;
-            background-color: #333333;
-        }
-        .wrapper {
-            position: relative;
-            height: 900px;
-        }
-
-        .fork {
-            position: absolute; /* 必须要绝对定位 */
-            width: 100%;
-            height: 50%;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            overflow: hidden;
-        }
-
-/*        #S {
-            z-index: 1;
-            font-size: 5em;
-            color: #ffffff;
-        }*/
-
-    </style>
+    <link href="./css/index.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="./js/jquery1.10.2.js.js"></script>
+    <script type="text/javascript" src="./js/fontSize.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/iSlider.js"></script>
+    <script type="text/javascript" src="./js/iSlider.animate.js"></script>
 </head>
 <body>
-<div class="wrapper">
-    <div class="fork" id="s"></div>
-</div>
+    <!--公共头部-->
+    <div class="m-head">
+        <a href="javascript:;" onclick="javascript:window.history.back();return false;" class="head-more">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="input-wrapper">
+            <input type="text">
+            <i class="fa fa-angle-right">搜索LOGO</i>
+        </div>
+        <a href="javascript:;" onclick="javascript:window.history.back();return false;" class="head-index">
+            <img src="" alt="logo"><!-- logo -->
+        </a>
+        
+    </div>
+    <!--index主体内容-->
+    <div class="m-index">
+        <!-- 广告图 -->
+        <div class="adv-pic">
+            <a href=""><img src="" alt=""></a>
+        </div>
+        <div class="product-class">
+            <ul>
+                <li>
+                    <a href="#">男士</a>
+                </li>
+                <li>
+                    <a href="#">女士</a>
+                </li>
+                <li>
+                    <a href="#">小孩</a>
+                </li>
+                <li>
+                    <a href="#">赠品</a>
+                </li>
+                <li>
+                    <a href="#">爆品</a>
+                </li>
+                <li>
+                    <a href="#">促销品</a>
+                </li>
+            </ul>
+        </div>
+        <div class="news-broadcast">
+            <span>news</span>
+            <div class='broad-wrapper'>
+                <div class='top-news'>
+                    <p>2018年10月20日快递放假1 </p>
+                    <i></i>
+                </div>
+                <div class='top-news'>
+                    <p>2018年10月20日快递放假2 </p>
+                    <i></i>
+                </div>
+                <div class='main-nav'>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>代理申请</span>
+                                <span>AGENCY APPLICATION</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>订单中心</span>
+                                <span>ORDER CENTER</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>代理查询</span>
+                                <span>AGENCY QUERY</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>产品中心</span>
+                                <span>PRODUCT CENTER</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>素材中心</span>
+                                <span>MATERIAL CENTER</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>活动中心</span>
+                                <span>ACTIVITY CENTER</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>个人中心</span>
+                                <span>PERSONAL CENTER</span>
+                            </a>
+                        </li>
 
 
-<script type="text/javascript" src="./js/iSlider.js"></script>
-<script type="text/javascript" src="./js/iSlider.animate.js"></script>
-<script id="show-code">
+                    </ul>
+                </div>
+                <div class="aboutus-list">
+                    <div>
+                        <p>团队风采</p>
+                        <p>TEAM DEMEANOR</p>
+                    </div>
+                    <div>
+                        <p>政策公告</p>
+                        <p>TEAM DEMEANOR</p>
+                    </div>
+                    <div>
+                        <p>关于安美拉</p>
+                        <p>TEAM DEMEANOR</p>
+                    </div>
+                </div>
+            </div>
 
-    var list = [
-        {content: "./imgs/1.jpg"},
-        {content: "./imgs/2.jpg"},
-        {content: "./imgs/3.jpg"},
-        {content: "./imgs/4.jpg"},
-        {content: "./imgs/5.jpg"},
-        {content: "./imgs/6.jpg"},
-        {content: "./imgs/7.jpg"},
-        {content: "./imgs/8.jpg"}
-    ];
+        </div>
+    </div>
 
-    var S = new iSlider(document.getElementById('s'), list, {
-        isLooping: 1,
-        isOverspread: 1,
-        isAutoplay: 1,
-        animateTime: 800,
-        animateType: 'depth'
-    });
+    <!--公共底部-->
+    <div class="m-footer">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="" alt="logo">
+                    <p>logo</p>                
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="推广中心">
+                    <p>推广中心</p>                
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="订单中心">
+                    <p>订单中心</p>              
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="" alt="推广中心">
+                    <p>推广中心</p>                
+                </a>
+            </li>
+        </ul>
+        <div>
+    </div>
 
-
-</script>
 </body>
 </html>

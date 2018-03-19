@@ -1,0 +1,21 @@
+﻿
+/* 公共头部 */
+.m-head {
+    overflow: hidden;
+    width: 100%;
+    background: -webkit-linear-gradient(left, #f9bcdd , #fe93af);
+}
+.head-more {
+    float: left;
+    height: .87rem;
+    line-height: .87rem;
+    text-align: center;
+}
+.input-wrapper {
+    float: left;
+}
+.head-index {
+    float: right;
+}
+
+/*公共底部*/
